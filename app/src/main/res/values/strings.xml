@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Admin</string>
+
+    <string name="placeholder_name" translatable="false">Hank Hankinson</string>
+    <string name="placeholder_title" translatable="false">Beautiful Title</string>
+    <string name="placeholder_text" translatable="false">Text</string>
+    <string name="placeholder_number" translatable="false">25</string>
+    <string name="placeholder_decimal" translatable="false">12.00</string>
+    <string name="placeholder_date" translatable="false">15–03–2015</string>
+    <string name="placeholder_desc" translatable="false">This is a description.</string>
+    <string name="placeholder_paragraph" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius nisi, a mattis erat. Etiam sit amet orci et risus imperdiet vehicula vitae in sapien. Donec a tellus a odio laoreet elementum. Ut tempor sem ac viverra volutpat. Pellentesque efficitur, ipsum a suscipit elementum, leo ipsum aliquet dui, sit amet accumsan diam arcu et velit</string>
+    <string name="placeholder_email">mail@mail.com</string>
+
+    <string name="feedback_delete_warning">Do you want to remove this feedback?</string>
+
+    <string name="negative">no</string>
+    <string name="positive">yes</string>
+</resources>
