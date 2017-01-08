@@ -31,8 +31,13 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
     @Override
-    protected void onResume() {
-        super.onResume();
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
+
+        feedbackManager = new FeedbackManager();
+
         try {
             new Thread(() -> {
                 List<Feedback> feedbackList = feedbackManager.getAllFeedback();
@@ -64,16 +69,6 @@ public class MainActivity extends AppCompatActivity {
             Log.e(TAG, "onCreate: ", e);
             Toast.makeText(this, String.format("Exception: %s", e.getMessage()), Toast.LENGTH_SHORT).show();
         }
-    }
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        ButterKnife.bind(this);
-
-        feedbackManager = new FeedbackManager();
-
 
     }
 
