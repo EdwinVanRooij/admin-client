@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Admin</string>
 
+    <string name="root_url" translatable="false">http://88.159.34.253:6438</string>
+
     <string name="placeholder_name" translatable="false">Hank Hankinson</string>
     <string name="placeholder_title" translatable="false">Beautiful Title</string>
     <string name="placeholder_text" translatable="false">Text</string>

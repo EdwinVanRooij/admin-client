@@ -19,7 +19,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvType"
-        android:maxLines="10"
         android:text="@string/placeholder_paragraph"
         android:textSize="15sp" />
 

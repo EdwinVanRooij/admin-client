@@ -1,5 +1,6 @@
 package me.evrooij.admin.data;
 
+import android.content.Context;
 import me.evrooij.admin.rest.ClientInterface;
 import me.evrooij.admin.rest.ResponseMessage;
 import me.evrooij.admin.rest.ServiceGenerator;
@@ -16,9 +17,16 @@ import java.util.List;
 
 public class FeedbackManager {
 
+    private Context context;
+
+    public FeedbackManager(Context context) {
+        this.context = context;
+
+    }
+
     public List<Feedback> getAllFeedback() {
         // Create a rest adapter
-        ClientInterface client = ServiceGenerator.createService(ClientInterface.class);
+        ClientInterface client = ServiceGenerator.createService(context, ClientInterface.class);
 
         // Fetch and print a list of the contributors to this library.
         Call<List<Feedback>> call = client.getAllFeedback();
@@ -37,7 +45,7 @@ public class FeedbackManager {
 
     public ResponseMessage deleteFeedback(int id) {
         // Create a rest adapter
-        ClientInterface client = ServiceGenerator.createService(ClientInterface.class);
+        ClientInterface client = ServiceGenerator.createService(context, ClientInterface.class);
 
         // Fetch and print a list of the contributors to this library.
         Call<ResponseMessage> call = client.deleteFeedback(id);

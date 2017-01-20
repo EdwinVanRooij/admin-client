@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        feedbackManager = new FeedbackManager();
+        feedbackManager = new FeedbackManager(this);
 
         try {
             new Thread(() -> {
